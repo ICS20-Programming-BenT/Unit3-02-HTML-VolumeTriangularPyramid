@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta name="description" content="Area of a right triangular pyramid, with JavaScript">
+    <meta name="keywords" content="Immaculata, ICS2O">
+    <meta name="author" content="Ben Thomson">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav_index/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./fav_index/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./fav_index/favicon-16x16.png">
+    <link rel="manifest" href="./fav_index/site.webmanifest">
+
+    <!-- Google's MDL -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Web page title -->
+    <title>Volume of a Right Triangular Pyramid in JavaScript</title>
+  </head>
+  <body>
+    <!-- Google's MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+
+    <!-- Container for web page content -->
+    <main style = "padding-left:20px; padding-right:20px;">
+      
+      <!-- Web page heading -->
+      <h1>Calculating the Volume of a Right Triangular Pyramid with User Input</h1>
+            
+      <!-- Body text -->
+      <p>Welcome! This web page will use dimensions of your choice to calculate the volume of a right triangular pyramid. See the image below for the dimensions that need to be entered and the formula that will be used.</p>
+
+      <!-- Image -->
+      <img src="./images/volume_triangle_pyramid.png" alt="Volume of a right triangular pyramid">
+      <br>
+      <br>
+
+      <!-- Body text -->
+      <p>Please fill in the form below to indicate the length of the pyramid's base (a), the height of the pyramid's base (b), and the height of the pyramid (h).</p>
+          
+      <!-- User input form -->
+      <form action="javascript:calculateVolume()">
+        <label for="base-length">Length of the pyramid's base (a) in cm:</label>
+        <input type="number" step="0.01" min="0" id="base-length" placeholder="Length of base..."><br><br>
+        <label for="base-height">Height of the pyramid's base (b) in cm:</label>
+        <input type="number" step="0.01" min="0" id="base-height" placeholder="Height of base..."><br><br>
+        <label for="height-pyramid">Height of the pyramid (h) in cm:</label>
+        <input type="number" step = "0.01" min="0" id="height-pyramid" placeholder="Pyramid height..."><br><br>
+        <input type="submit" value="Calculate Volume">
+      </form>
+      <br>
+
+      <!-- Space for displaying user information -->
+      <p>Results:</p>
+      <div id="calculations">
+      </div>
+      <br>
+    </main>
+  </body>
+</html>
